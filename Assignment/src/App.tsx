@@ -1,5 +1,6 @@
 import React, { useState, useReducer } from 'react';
 import './App.css';
+// import headDark from './assets/images/bg-desktop-dark.jpg'
 
 interface Todo {
   text: string;
@@ -14,12 +15,12 @@ type ActionType =
   | { type: 'CLEAR_COMPLETED' };
 
 const initialState: Todo[] = [
-  { text: 'Complete online JavaScript course', completed: true },
-  { text: 'Jog around the park 3x', completed: false },
-  { text: '10 minutes meditation', completed: false },
-  { text: 'Read for 1 hour', completed: false },
-  { text: 'Pick up groceries', completed: false },
-  { text: 'Complete Todo App on Frontend Mentor', completed: false },
+  { text: 'Go to the hospital', completed: true },
+  { text: 'Run in the park ', completed: false },
+  { text: 'Eat a meal ', completed: false },
+  { text: 'Sleep for 1 hour in the afternoon', completed: false },
+  { text: 'Pick up groceries and cook supper', completed: false },
+  { text: 'Drink enough water', completed: false },
 ];
 
 const reducer = (state: Todo[], action: ActionType): Todo[] => {
@@ -75,6 +76,7 @@ const App: React.FC = () => {
 
   return (
     <div className="todo-app">
+      {/* image{headDark} */}
       <h1>TODO</h1>
       <form onSubmit={handleAddTodo} className="todo-input">
         <input
