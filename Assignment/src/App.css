@@ -117,24 +117,25 @@ body {
   border-radius: 4px;
 }
 @media (max-width: 640px) {
+  /* Mobile specific styles */
   body {
     background: linear-gradient(135deg, #667eea, #764ba2);
     background-size: cover;
-    background-attachment: fixed; /* Keeps the background fixed */
+    background-attachment: fixed;
     height: 100vh; /* Ensure background covers the full viewport */
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
+  /* Make the container fit within the available screen width */
   .todo-app {
-    padding: 15px; /* Reduce padding for smaller screens */
-    width: 100%; /* Full width for small screens */
-    max-width: 100%; /* Ensure it fits within the screen width */
-    margin: 10px 0; /* Reduce margins to fit the screen */
-    box-sizing: border-box; /* Include padding and border within the width */
+    padding: 15px; /* Reduce padding for mobile screens */
+    max-width: 100%; /* Ensure container takes up full available width */
+    width: 100%; /* Full width for mobile view */
+    margin: 10px 0; /* Adjust margin for mobile view */
   }
 
   .todo-app h1 {
-    font-size: 1.5rem; /* Reduce font size for the header */
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
   }
 
   .todo-input {
@@ -145,7 +146,7 @@ body {
 
   .todo-input input {
     width: 100%; /* Full width for input */
-    padding: 8px; /* Adjust padding for smaller screen */
+    padding: 8px; /* Adjust padding for smaller screens */
     font-size: 1rem; /* Adjust font size for input */
   }
 
