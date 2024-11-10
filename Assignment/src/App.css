@@ -1,17 +1,22 @@
-/* Base body styles */
+/* Ensure body and html take full width and height */
+html, body {
+  height: 100%; /* Ensure the body and html fill the entire viewport */
+  width: 100%; /* Ensure the body and html take full width */
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 body {
   background: linear-gradient(135deg, #667eea, #764ba2);
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures the background covers the entire screen */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover; /* Ensure the background covers the entire screen */
+  background-attachment: fixed;
   color: #fff;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensures body takes full viewport height */
-  margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
 .todo-app {
@@ -23,7 +28,7 @@ body {
   max-width: 400px;
   width: 100%;
   margin: 20px;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-sizing: border-box;
 }
 
 .todo-app h1 {
