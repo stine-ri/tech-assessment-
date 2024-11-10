@@ -129,7 +129,7 @@ html, body {
   /* Todo app container for mobile */
   .todo-app {
     padding: 15px; /* Reduce padding */
-    max-width: 100%;  /* Ensure it takes up full screen width */
+    max-width: 80%;  /* Ensure it takes up full screen width */
     width: 100%;
     margin: 10px 0;
     box-sizing: border-box;
