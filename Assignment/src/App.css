@@ -117,13 +117,17 @@ body {
   border-radius: 4px;
 }
 @media (max-width: 640px) {
-   body {
-   background: linear-gradient(135deg, #667eea, #764ba2); /* Solid background color for small screens */
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-size: cover;
+    background-attachment: fixed; /* Ensures background stays fixed */
   }
+
   .todo-app {
     padding: 15px; /* Reduce padding for smaller screens */
-    max-width: 90%; /* Reduce width for mobile view */
+    max-width: 90%; /* Ensure container width fits within mobile view */
     margin: 10px; /* Adjust margin */
+    box-sizing: border-box; /* Ensure padding is included within width */
   }
 
   .todo-app h1 {
@@ -173,4 +177,3 @@ body {
     padding: 4px; /* Adjust padding */
   }
 }
-
