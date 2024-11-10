@@ -120,14 +120,17 @@ body {
   body {
     background: linear-gradient(135deg, #667eea, #764ba2);
     background-size: cover;
-    background-attachment: fixed; /* Ensures background stays fixed */
+    background-attachment: fixed; /* Keeps the background fixed */
+    height: 100vh; /* Ensure background covers the full viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   .todo-app {
     padding: 15px; /* Reduce padding for smaller screens */
-    max-width: 90%; /* Ensure container width fits within mobile view */
-    margin: 10px; /* Adjust margin */
-    box-sizing: border-box; /* Ensure padding is included within width */
+    width: 100%; /* Full width for small screens */
+    max-width: 100%; /* Ensure it fits within the screen width */
+    margin: 10px 0; /* Reduce margins to fit the screen */
+    box-sizing: border-box; /* Include padding and border within the width */
   }
 
   .todo-app h1 {
