@@ -1,14 +1,17 @@
+/* Base body styles */
 body {
   background: linear-gradient(135deg, #667eea, #764ba2);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background covers the entire screen */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
   color: #fff;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  min-height: 100vh; /* Ensures body takes full viewport height */
   margin: 0;
-
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .todo-app {
@@ -20,7 +23,7 @@ body {
   max-width: 400px;
   width: 100%;
   margin: 20px;
-  
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .todo-app h1 {
@@ -116,22 +119,24 @@ body {
   padding: 5px;
   border-radius: 4px;
 }
+
 @media (max-width: 640px) {
   /* Mobile specific styles */
   body {
     background: linear-gradient(135deg, #667eea, #764ba2);
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh; /* Ensure background covers the full viewport */
+    min-height: 100vh; /* Ensure background covers the full viewport */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margin */
   }
 
-  /* Make the container fit within the available screen width */
   .todo-app {
     padding: 15px; /* Reduce padding for mobile screens */
     max-width: 100%; /* Ensure container takes up full available width */
     width: 100%; /* Full width for mobile view */
     margin: 10px 0; /* Adjust margin for mobile view */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .todo-app h1 {
