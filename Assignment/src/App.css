@@ -116,3 +116,58 @@ body {
   padding: 5px;
   border-radius: 4px;
 }
+@media (max-width: 640px) {
+  .todo-app {
+    padding: 15px; /* Reduce padding for smaller screens */
+    max-width: 90%; /* Reduce width for mobile view */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .todo-app h1 {
+    font-size: 1.5rem; /* Reduce font size for the header */
+  }
+
+  .todo-input {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: stretch; /* Stretch input and button to full width */
+    gap: 10px; /* Add spacing between input and button */
+  }
+
+  .todo-input input {
+    width: 100%; /* Full width for input */
+    padding: 8px; /* Adjust padding for smaller screen */
+    font-size: 1rem; /* Adjust font size for input */
+  }
+
+  .todo-input button {
+    width: 100%; /* Full width for button */
+    padding: 8px; /* Adjust padding for button */
+    font-size: 1rem; /* Adjust font size for button */
+  }
+
+  .todo-item {
+    padding: 8px; /* Reduce padding for todo items */
+  }
+
+  .todo-footer {
+    flex-direction: column; /* Stack footer elements vertically */
+    align-items: stretch; /* Stretch footer elements */
+    gap: 10px; /* Add spacing between footer items */
+  }
+
+  .filters {
+    justify-content: center; /* Center the filter buttons */
+    gap: 8px; /* Adjust spacing between buttons */
+  }
+
+  .filters button {
+    padding: 4px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .clear-completed {
+    font-size: 0.9rem; /* Reduce font size for clear button */
+    padding: 4px; /* Adjust padding */
+  }
+}
+
